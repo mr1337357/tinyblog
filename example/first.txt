@@ -1,0 +1,3 @@
+<!--TBLOG title='Example Article One'-->
+<!--TBLOG date='1999.12.31'-->
+ooh new millenium starting soon

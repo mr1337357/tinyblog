@@ -1,0 +1,3 @@
+<!--TBLOG title='New Millenium New Me'-->
+<!--TBLOG date='2000.01.01'-->
+Yay!

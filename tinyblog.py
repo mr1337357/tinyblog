@@ -67,7 +67,7 @@ def make_articles(template,articles):
 
 def make_index(template,articles,config):
     bloginfo = {}
-    navi = make_navi(articles)
+    navi = make_navi(articles,0)
     bloginfo['navi']=navi
     bloginfo['blogname']=config.configs['blogname']
     filecontent = template.substitute(bloginfo)
@@ -94,3 +94,4 @@ if __name__ == '__main__':
     index_template = Template(index_template_text)
     make_index(index_template,articles,configfile)
     shutil.copyfile('template/article.css','blog/article.css')
+    shutil.copyfile('template/index.css','blog/index.css')
