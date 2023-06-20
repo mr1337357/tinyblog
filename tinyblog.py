@@ -41,8 +41,9 @@ class config:
         configfile = open('articles/config.ini','r')
         for line in configfile.readlines():
             line = line[:-1]
-            k,v = line.split('=')
-            self.configs[k]=v
+            s = line.split('=')
+            if len(s) == 2:
+                self.configs[s[0]]=s[1]
         
 def make_filename(article):
     return '{}-{}.html'.format(article.meta['date'],article.meta['title'])
