@@ -1,0 +1,20 @@
+.leftcol {
+    scrollwidth:200px;
+    width:170px;
+    height:auto;
+    float:left;
+ }
+
+.polaroid {
+    width:930px
+    height:auto;
+    float:left;
+ }
+
+.polaroid img {
+    border: 20px solid #fff;
+    border-bottom: 75px solid #fff;
+    -webkit-box-shadow: 5px 5px 5px #778;
+    -moz-box-shadow: 5px 5px 5px #778;
+    box-shadow: 5px 5px 5px #778;
+  }
