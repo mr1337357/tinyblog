@@ -71,6 +71,17 @@ def make_index(template,articles,config):
     navi = make_navi(articles,0)
     bloginfo['navi']=navi
     bloginfo['blogname']=config.configs['blogname']
+    for i in range(3):
+        if len(articles) <= i:
+            bloginfo['fn'+str(i+1)] = ''
+            bloginfo['title'+str(i+1)] = ''
+            bloginfo['date'+str(i+1)] = ''
+            bloginfo['text'+str(i+1)] = ''
+        else:
+            bloginfo['fn'+str(i+1)] = make_filename(articles[i])
+            bloginfo['title'+str(i+1)] = articles[i].meta['title']
+            bloginfo['date'+str(i+1)] = articles[i].meta['date']
+            bloginfo['text'+str(i+1)] = articles[i].meta['text']
     filecontent = template.substitute(bloginfo)
     outfile = open('blog/index.html','w')
     outfile.write(filecontent)

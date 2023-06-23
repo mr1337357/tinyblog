@@ -1,4 +1,23 @@
-h1
-{
-  text-align: center;
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-bottom: 0px;
+}
+h3 {
+    margin-top: 0px;
+}
+
+.leftcol {
+    scrollwidth:200px;
+    width:170px;
+    height:100%;
+    float:left;
+    margin-right: 5px;
+    /*border-width: 2px;*/
+    border-right: 2px;
+    border-top: 2px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: grey;
 }
